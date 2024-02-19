@@ -12,7 +12,7 @@ This repository contains the implementation of the classic 2048 game, a single-p
 To run this game locally, follow these steps:
 1. Clone the repository to your local machine.
 ```bash
-git clone <repository-url>
+git clone https://github.com/kimo26/2048.git
 ```
 2. Open the `2048.html` file in your browser to start playing the game.
 
