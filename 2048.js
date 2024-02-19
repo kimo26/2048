@@ -78,21 +78,29 @@ function updateTile(tile,num){
 
 }
 
-document.addEventListener("keyup", (e) => {
-    switch (e.key) {
-        case "ArrowLeft": slideLeft(); break;
-        case "ArrowRight": slideRight(); break;
-        case "ArrowUp": slideUp(); break;
-        case "ArrowDown": slideDown(); break;
-    }
-    addRandomTile();
-    updateBoard();
-    updateScore();
-    if (isGameOver()) {
-        document.getElementById("gameOverMessage").style.display = "block";
-        document.getElementById("restartButton").style.display = "block";
-    }
-});
+document.addEventListener("keyup", (e) =>{
+	if (e.code == "ArrowLeft"){
+		slideLeft();
+		setTwo();
+	}else if (e.code == "ArrowRight"){
+		slideRight();
+		setTwo();
+	}else if (e.code == "ArrowUp"){
+		slideUp();
+		setTwo();
+	}else if (e.code == "ArrowDown"){
+		slideDown();
+		setTwo();
+	}
+	document.getElementById("score").innerText = score;
+	
+	if (checkGameOver()) {
+	    document.getElementById("gameOverMessage").style.display = "block";
+	    document.getElementById("restartButton").style.display = "block"; // Show the restart button
+	}
+
+
+})
 
 function filterZero(row){
 	return row.filter(num => num != 0);
