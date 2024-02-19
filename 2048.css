@@ -1,0 +1,128 @@
+body{
+  	font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+	text-align: center;
+}
+
+hr{
+	width: 500px;
+}
+
+#restartButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #cdc1b5;
+    color: #727371;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: none; /* Initially hidden */
+}
+
+#restartButton:hover {
+    background-color: #9f8b76;
+}
+#gameOverMessage {
+    font-size: 30px;
+    font-weight: bolder;
+    color: #727371; /* Same text color as the restart button */
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin: 20px auto;
+    display: none; /* Initially hidden like the restart button */
+    text-align: center;
+    width: max-content; /* To auto-adjust width based on content, centered due to margin */
+}
+
+
+#board{
+	width: 400px;
+	height: 400px;
+
+	background-color: #cdc1b5;
+	border: 6px solid #bbada0;
+
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.tile{
+	width: 90px;
+	height: 90px;
+	border: 5px solid #bbada0;
+
+	font-size: 40px;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+
+}
+.x2 {
+	background-color: #eee4da;
+	color: #727371;
+}
+
+.x4 {
+	background-color: #ece0ca;
+	color: #727371;
+}
+
+.x8 {
+	background-color: #f3b27a;
+	color: white;
+}
+
+.x16 {
+	background-color: #f59575;
+	color: white;
+}
+
+.x32 {
+	background-color: #f77c5f;
+	color: white;
+}
+
+.x64 {
+	background-color: #f75f3b;
+	color: white;
+}
+
+.x128 {
+	background-color: #edd073;
+	color: white;
+}
+
+.x256 {
+	background-color: #edcc62;
+	color: white;
+}
+
+.x512 {
+	background-color: #edc950;
+	color: white;
+}
+
+.x1024 {
+	background-color: #edc53f;
+	color: white;
+}
+
+.x2048 {
+	background-color: #edc22e;
+	color: white;
+}
+
+.x4096 {
+	background-color: #fe3d3d;
+	color: white;
+}
+
+.x8192 {
+	background-color: #ff2020;
+	color: white;
+}
